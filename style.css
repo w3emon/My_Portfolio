@@ -144,25 +144,6 @@ html {
   font-weight: 500;
   color: teal;
 }
-.home .home-content a {
-  display: inline-block;
-  background: teal;
-  color: #fff;
-  font-size: 25px;
-  padding: 8px 20px;
-  margin-top: 20px;
-  border-radius: 6px;
-  border: 2px solid teal;
-  transition: all 0.3s ease;
-}
-.home .home-content .web {
-  margin-right: 25px;
-}
-
-.home .home-content a:hover {
-  color: white;
-  background: #000;
-}
 
 /* all similar content styling code */
 section {
@@ -691,6 +672,36 @@ footer span a:hover {
 }
 
 /* modified css */
+
+.hero__btn-group {
+  display: flex;
+  gap: 20px;
+  a {
+    display: inline-flex;
+    background: teal;
+    color: #fff;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid teal;
+    font-size: 20px;
+    transition: 300ms ease-in-out;
+    flex-shrink: 0;
+  }
+
+  a:hover {
+    border: 2px solid teal;
+    background: #111;
+  }
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 .social_icon_grp {
   margin-top: 20px;
 }
@@ -735,5 +746,17 @@ footer span a:hover {
 @media screen and (max-width: 830px) {
   .hero__container {
     padding: 0px 40px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  .hero__btn-group a {
+    font-size: 16px !important;
+    padding: 7px 12px !important;
+  }
+
+  .hero__btn-group img {
+    height: 20px !important;
+    width: 20px !important;
   }
 }
